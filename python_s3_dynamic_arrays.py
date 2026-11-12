@@ -25,9 +25,6 @@ def _da_capacity(xs):
 
 
 def da_append(xs, x):
-    if x is None:
-        print("We do not support `None` in dynamic array.")
-        assert False
     items = _da_items(xs)
     count = _da_count(xs)
     capacity = _da_capacity(xs)

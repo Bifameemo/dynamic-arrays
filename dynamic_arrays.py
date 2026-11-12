@@ -31,8 +31,6 @@ def _da_capacity(xs: DynamicArray) -> int:
 
 
 def da_append(xs: DynamicArray, x: Any) -> DynamicArray:
-    if x is None:
-        raise ValueError("We do not support `None` in dynamic array.")
     items = _da_items(xs)
     count = _da_count(xs)
     capacity = _da_capacity(xs)
